@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emailgui.EmailGUIController">
+    <children>
+        <Button id="sendButton" fx:id="button" layoutX="412.0" layoutY="123.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="85.0" text="Send" />
+      <TextField id="recipient" fx:id="recipient" layoutX="240.0" layoutY="95.0" />
+      <TextField id="subject" fx:id="subject" layoutX="240.0" layoutY="123.0" />
+      <TextArea id="body" fx:id="body" layoutX="91.0" layoutY="172.0" prefHeight="200.0" prefWidth="406.0" />
+      <Label layoutX="142.0" layoutY="90.0" prefHeight="17.0" prefWidth="85.0" text="Recipient" />
+      <Label layoutX="142.0" layoutY="127.0" prefHeight="17.0" prefWidth="85.0" text="Subject" />
+      <Label layoutX="143.0" layoutY="35.0" text="UserName" />
+      <Label layoutX="143.0" layoutY="61.0" prefHeight="17.0" prefWidth="56.0" text="Password" />
+      <TextField fx:id="userName" layoutX="240.0" layoutY="31.0" />
+      <TextField fx:id="password" layoutX="240.0" layoutY="66.0" />
+    </children>
+</AnchorPane>

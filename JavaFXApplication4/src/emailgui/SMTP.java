@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package smtp;
+package emailgui;
 
 /**
  *
@@ -20,11 +20,9 @@ import javax.mail.internet.*;
 public class SMTP
 {
 
-    private static String USER_NAME = "*************";  // GMail user
-    private static String PASSWORD = "****************"; // GMail password
-    private static String RECIPIENT = "*********************";
+    
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         String from = USER_NAME;
         String pass = PASSWORD;
         String[] to = { RECIPIENT }; // list of recipient email addresses
@@ -32,9 +30,9 @@ public class SMTP
         String body = "Welcome to JavaMail!";
 
         sendFromGMail(from, pass, to, subject, body);
-    }
+    }*/
 
-    private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
+    public static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
         props.put("mail.smtp.starttls.enable", "true");

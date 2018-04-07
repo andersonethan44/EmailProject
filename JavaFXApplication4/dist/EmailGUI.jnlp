@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EmailGUI.jnlp">
+  <information>
+    <title>EmailGUI</title>
+    <vendor>Ethan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EmailGUI.jar" size="4498" download="eager" />
+    <jar href="lib\javax.mail.jar" size="654100" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EmailGUI" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="emailgui.EmailJavaFXLoader"  name="EmailGUI" />
+  <update check="always"/>
+</jnlp>
